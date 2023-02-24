@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/home_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="홈"
+        android:textSize="20dp"
+        android:textColor="#191919"
+        android:layout_marginTop="38dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/navigation_lo"
+        android:layout_width="296dp"
+        android:layout_height="92dp"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_round"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="43dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_tv">
+
+        <ImageView
+            android:id="@+id/navigation_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_example"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginStart="44dp" />
+
+        <TextView
+            android:id="@+id/navigation_tv"
+            android:layout_width="70dp"
+            android:layout_height="24dp"
+            android:text="길 찾기"
+            android:textSize="20dp"
+            android:textColor="#191919"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginStart="39dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/favorite_lo"
+        android:layout_width="296dp"
+        android:layout_height="92dp"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_round"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navigation_lo">
+
+        <ImageView
+            android:id="@+id/favorite_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_example"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginStart="44dp" />
+
+        <TextView
+            android:id="@+id/favorite_tv"
+            android:layout_width="75dp"
+            android:layout_height="24dp"
+            android:text="즐겨찾기"
+            android:textSize="20dp"
+            android:textColor="#191919"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginStart="33dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_lo"
+        android:layout_width="296dp"
+        android:layout_height="92dp"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_round"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/favorite_lo">
+
+        <ImageView
+            android:id="@+id/setting_iv"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_example"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginStart="44dp" />
+
+        <TextView
+            android:id="@+id/setting_tv"
+            android:layout_width="75dp"
+            android:layout_height="24dp"
+            android:text="환경설정"
+            android:textSize="20dp"
+            android:textColor="#191919"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginStart="31dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

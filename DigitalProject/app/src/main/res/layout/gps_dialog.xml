@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="304dp"
+        android:layout_height="299dp"
+        android:background="@drawable/dialog_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:behavior_hideable="true"
+        app:behavior_draggable="true"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <ImageView
+            android:id="@+id/gps_iv"
+            android:layout_width="18.45dp"
+            android:layout_height="23.81dp"
+            android:src="@drawable/ic_example"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/gpsAccess_tv"
+            android:layout_width="264dp"
+            android:layout_height="40dp"
+            android:textSize="13dp"
+            android:textColor="#191919"
+            android:lineSpacingExtra="5dp"
+            android:text="OOO 에서 내 기기 위치에 액세스하도록 \n허용하시겠습니까?"
+            app:layout_constraintTop_toBottomOf="@+id/gps_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="22dp" />
+
+
+        <TextView
+            android:id="@+id/gpsAccess2_tv"
+            android:layout_width="264dp"
+            android:layout_height="51dp"
+            android:text="앱을 사용하고 있지 않을 때도 앱에서 내 위치에 항상 \n액세스하려고 할 수 있습니다. 설정에서 액세스를 \n 허용하세요."
+            android:textSize="12dp"
+            android:textColor="#191919"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/gpsAccess_tv"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/gpsAccessAnswer1_tv"
+            android:layout_width="108dp"
+            android:layout_height="19dp"
+            android:text="앱 사용 중에만 허용"
+            android:textSize="13dp"
+            android:textColor="#0780fc"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/gpsAccess2_tv"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/gpsAccessAnswer2_tv"
+            android:layout_width="65dp"
+            android:layout_height="19dp"
+            android:text="이번만 허용"
+            android:textSize="13dp"
+            android:textColor="#0780fc"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/gpsAccessAnswer1_tv"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/gpsAccessAnswer3_tv"
+            android:layout_width="25dp"
+            android:layout_height="19dp"
+            android:text="거부"
+            android:textSize="13dp"
+            android:textColor="#0780fc"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@+id/gpsAccessAnswer2_tv"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
