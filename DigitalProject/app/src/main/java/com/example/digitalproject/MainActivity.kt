@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity(), GpsDialogInterface {
 
         setButton.setOnClickListener {
             //startActivity(Intent(this, GpsDialog::class.java))
+            val intent = Intent(applicationContext, settingActivity::class.java)
+            startActivity(intent)
         }
     }
 
