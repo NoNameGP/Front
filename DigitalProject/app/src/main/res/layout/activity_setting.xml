@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingActivity">
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환경설정"
+        android:textSize="20dp"
+        android:textColor="#191919"
+        android:layout_marginTop="38dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/theme_lo"
+        android:layout_width="296dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_round"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="43dp"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+
+        <TextView
+            android:id="@+id/theme_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:text="화면 테마"
+            android:textColor="#191919"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/audio"
+        android:layout_width="296dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_round"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/theme_lo">
+
+
+        <TextView
+            android:id="@+id/audio_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:text="음성안내"
+            android:textColor="#191919"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
