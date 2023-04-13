@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speech Detection</title>
+</head>
+<body>
+
+  <div style="opacity: 0;" class="words" contenteditable>
+  </div>
+
+
+
+<script>
+  // Google Chrome and Microsoft Edge need vendor prefix 'webkit'
+  window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  const recognition = new SpeechRecognition();
+
+  // 음성인식 도중의 결과 반환
+  // false는 첫 단어만 반환, true는 문장으로 반환
+  recognition.interimResults = true;
+
+  // 값이 없으면 HTML의 <html lang="en">을 참고합니다. ko-KR, en-US
+  recognition.lang = "ko-KR";
+
+  // true면 음성 인식이 안 끝나고 계속 됩니다. 중간에 stop이 안됨. stop하려면 강제 호툴이 필요.
+  recognition.continuous = true;
+
+  // 숫자가 작을수록 발음대로 적고, 크면 문장의 적합도에 따라 알맞은 단어로 대체합니다.
+  // maxAlternatives가 크면 이상한 단어도 문장에 적합하게 알아서 수정합니다.
+  recognition.maxAlternatives = 20000;
+
+  // HTML element for recognition results
+  let p = document.createElement('p');
+  const words = document.querySelector('.words');
+  words.appendChild(p); // .words가 정의된 div내에 새로운 p 문단들을 넣어줄 예정입니다.
+
+  // it listens when the result comes back
+  recognition.addEventListener('result', e => {
+    // extract transcript from recognition
+    const transcript = Array.from(e.results)
+      .map(result => result[0])
+      .map(result => result.transcript)
+      .join('');
+
+    p.textContent = transcript;
+
+    // create new paragraph when speech breaks
+    // 잠시 멈췄다 말할 때 덮어씌워지는 문제 해결하기 위해 새로운 내용을 넣을 새 문단 요소 만들기
+    // if(e.results[0].isFinal) {
+    //   p = document.createElement('p');
+    //   words.appendChild(p);
+    // }
+
+    // recognize certain speech
+      // can be used with external Weather API
+      // 특정 단어를 인식하면 함수를 수행하는 방식
+    if(transcript.includes('온도')) {
+      console.log(`오늘의 온도는 00도입니다.`);
+    }
+  })
+
+  // 음성 인식은 말이 끝나는 순간 작동을 멈춘다. 그래서 말하던 중 잠시 멈췄다 말하더라도 계속 인식하게
+  // recognition unbinds itself when result comes back, making it unavailable
+  // restart is needed when recognition ends
+  // recognition.addEventListener('end', () => {
+  //   recognition.start();
+  // });
+
+  recognition.start(); //음성인식 시작
+
+  //음성인식 종료 제어
+  // recognition.onend = function() {
+  //   console.log('한 뭉탱이 인식이 끝났습니다.');
+  //   recognition.stop();
+  // };
+  
+  // recognition.onspeechend = function() { // 음성 감지가 끝날때 실행될 이벤트
+  //   recognition.stop();
+  //   console.log('한 뭉탱이 인식이 끝났습니다.');
+  // };
+
+
+</script>
+
+
+</body>
+</html>

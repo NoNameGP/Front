@@ -1,0 +1,173 @@
+.mediaViewInfo {
+	--web-view-name: 온보딩-2 – 1;
+	--web-view-id: n_2__1;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: n_2__1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#n_2__1 {
+	position: absolute;
+	width: 360px;
+	height: 669px;
+	background-color: rgba(13,13,13,1);
+	overflow: hidden;
+	--web-view-name: 온보딩-2 – 1;
+	--web-view-id: n_2__1;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: fit;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#Background {
+	opacity: 0.25;
+	filter: blur(20px);
+	fill: rgba(216,255,247,0.702);
+}
+.Background {
+	overflow: visible;
+	position: absolute;
+	width: 428px;
+	height: 204px;
+	left: 26px;
+	top: 570px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#n_10512 {
+	position: absolute;
+	width: 320px;
+	height: 75px;
+	left: 20px;
+	top: 570px;
+	overflow: visible;
+	transition: all 0.30000001192092896s ease-out;
+	--web-animation: fadein 0.30000001192092896s ease-out;
+	--web-action-type: page;
+	--web-action-target: onboarding_1.html;
+	cursor: pointer;
+}
+#Background_dt {
+	fill: url(#Background_dt);
+}
+.Background_dt {
+	position: absolute;
+	overflow: visible;
+	width: 320px;
+	height: 75px;
+	left: 0px;
+	top: 0px;
+}
+#Text {
+	left: 112px;
+	top: 21px;
+	position: absolute;
+	overflow: visible;
+	width: 97px;
+	height: 34px;
+	text-align: center;
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 23px;
+	color: rgba(0,0,0,1);
+}
+#OOO______ {
+	left: 48px;
+	top: 358px;
+	position: absolute;
+	overflow: hidden;
+	width: 265px;
+	height: 73px;
+	line-height: 34px;
+	margin-top: -6px;
+	text-align: center;
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	color: rgba(243,243,252,1);
+	letter-spacing: -0.2px;
+}
+#n_2 {
+	fill: rgba(106,255,226,1);
+}
+.n_2 {
+	position: absolute;
+	overflow: visible;
+	width: 10px;
+	height: 10px;
+	left: 157px;
+	top: 508px;
+}
+#n_15 {
+	fill: rgba(101,101,101,1);
+}
+.n_15 {
+	position: absolute;
+	overflow: visible;
+	width: 10px;
+	height: 10px;
+	left: 177px;
+	top: 508px;
+}
+#n_16 {
+	fill: rgba(101,101,101,1);
+}
+.n_16 {
+	position: absolute;
+	overflow: visible;
+	width: 10px;
+	height: 10px;
+	left: 197px;
+	top: 508px;
+}
+#Text_dz {
+	left: 277px;
+	top: 18px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	transition: all 0.20000000298023224s ease-in;
+	--web-animation: fadein 0.20000000298023224s ease-in;
+	--web-action-type: page;
+	--web-action-target: ___.html;
+	cursor: pointer;
+	text-align: center;
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(166,175,175,1);
+	letter-spacing: -0.05px;
+}
+#n_12 {
+	fill: rgba(166,175,175,1);
+}
+.n_12 {
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	height: 59px;
+	left: 151px;
+	top: 191px;
+}
