@@ -73,7 +73,7 @@
 	transition: all 0.4000000059604645s ease-in-out;
 	--web-animation: fadein 0.4000000059604645s ease-in-out;
 	--web-action-type: page;
-	--web-action-target: start.html;
+	--web-action-target: ../start.html;
 	cursor: pointer;
 }
 #Icon_ionic-ios-arrow-back_dn {

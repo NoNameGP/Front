@@ -1,13 +1,13 @@
 .mediaViewInfo {
-	--web-view-name: 출발지 설정 - 1-2;
-	--web-view-id: n__-_1-2;
+	--web-view-name: 목적지 설정 2-1;
+	--web-view-id: n__2-1;
 	--web-scale-to-fit: true;
 	--web-scale-to-fit-type: fit;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 }
 :root {
-	--web-view-ids: n__-_1-2;
+	--web-view-ids: n__2-1;
 }
 * {
 	margin: 0;
@@ -15,137 +15,41 @@
 	box-sizing: border-box;
 	border: none;
 }
-#n__-_1-2 {
+#n__2-1 {
 	position: absolute;
 	width: 360px;
 	height: 669px;
-	background-color: rgba(25,25,25,1);
+	background-color: rgba(13,13,13,1);
 	overflow: hidden;
-	--web-view-name: 출발지 설정 - 1-2;
-	--web-view-id: n__-_1-2;
+	--web-view-name: 목적지 설정 2-1;
+	--web-view-id: n__2-1;
 	--web-scale-to-fit: true;
 	--web-scale-to-fit-type: fit;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 }
-@keyframes fadein {
 
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-
+#n_176 {
+	fill: rgba(25,25,25,1);
 }
-#n_29_dk {
-	fill: url(#n_29_dk);
-}
-.n_29_dk {
+.n_176 {
 	position: absolute;
 	overflow: visible;
-	width: 150px;
-	height: 150px;
-	left: 105px;
-	top: 392px;
-}
-#n_607 {
-	position: absolute;
-	width: 115px;
-	height: 46.116px;
-	left: 122.5px;
-	top: 360px;
-	overflow: visible;
-}
-#n_1 {
-	fill: transparent;
-	stroke: rgba(83,255,221,1);
-	stroke-width: 4px;
-	stroke-linejoin: miter;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.n_1 {
-	overflow: visible;
-	position: absolute;
-	width: 4px;
-	height: 34px;
-	left: 57.5px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#n_2 {
-	fill: transparent;
-	stroke: rgba(83,255,221,1);
-	stroke-width: 4px;
-	stroke-linejoin: miter;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.n_2 {
-	overflow: visible;
-	position: absolute;
-	width: 20.488px;
-	height: 30.488px;
-	left: 74.5px;
-	top: 10px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#n_5 {
-	fill: transparent;
-	stroke: rgba(83,255,221,1);
-	stroke-width: 4px;
-	stroke-linejoin: miter;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.n_5 {
-	overflow: visible;
-	position: absolute;
-	width: 35.366px;
-	height: 20.366px;
-	left: 85px;
-	top: 31.116px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#n_6 {
-	fill: transparent;
-	stroke: rgba(83,255,221,1);
-	stroke-width: 4px;
-	stroke-linejoin: miter;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.n_6 {
-	overflow: visible;
-	position: absolute;
-	width: 20.488px;
-	height: 30.488px;
-	left: 25.5px;
-	top: 10px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#n_7 {
-	fill: transparent;
-	stroke: rgba(83,255,221,1);
-	stroke-width: 4px;
-	stroke-linejoin: miter;
-	stroke-linecap: round;
-	stroke-miterlimit: 4;
-	shape-rendering: auto;
-}
-.n_7 {
-	overflow: visible;
-	position: absolute;
-	width: 35.366px;
-	height: 20.366px;
+	width: 360px;
+	height: 94px;
 	left: 0px;
-	top: 31.116px;
-	transform: matrix(1,0,0,1,0,0);
+	top: 0px;
+}
+#n_29_el {
+	fill: url(#n_29_el);
+}
+.n_29_el {
+	position: absolute;
+	overflow: visible;
+	width: 30px;
+	height: 30px;
+	left: 165px;
+	top: 440px;
 }
 #Icon_ionic-ios-arrow-back {
 	position: absolute;
@@ -154,16 +58,15 @@
 	left: 10px;
 	top: 41px;
 	overflow: visible;
-	transition: all 0.4000000059604645s ease-in;
-	--web-animation: fadein 0.4000000059604645s ease-in;
+	--web-animation: fadein undefineds undefined;
 	--web-action-type: page;
-	--web-action-target: voice.html;
+	--web-action-target: destination.html;
 	cursor: pointer;
 }
-#Icon_ionic-ios-arrow-back_ds {
+#Icon_ionic-ios-arrow-back_en {
 	fill: rgba(166,175,175,1);
 }
-.Icon_ionic-ios-arrow-back_ds {
+.Icon_ionic-ios-arrow-back_en {
 	overflow: visible;
 	position: absolute;
 	width: 13.503px;
@@ -172,7 +75,7 @@
 	top: 0px;
 	transform: matrix(1,0,0,1,0,0);
 }
-#n__1__11 {
+#n__1__33 {
 	position: absolute;
 	width: 79.271px;
 	height: 14.59px;
@@ -252,7 +155,7 @@
 	position: absolute;
 	width: 7.731px;
 	height: 10.321px;
-	left: 3.583px;
+	left: 3.582px;
 	top: 0.794px;
 	transform: matrix(1,0,0,1,0,0);
 }
@@ -430,40 +333,20 @@
 	font-size: 20px;
 	color: rgba(243,243,252,1);
 }
-/* #n_1_ec {
-	fill: rgba(83,255,221,1);
-}
-.n_1_ec {
+#n__ {
+	left: 70px;
+	top: 126px;
 	position: absolute;
 	overflow: visible;
-	width: 14px;
-	height: 14px;
-	left: 144px;
-	top: 126px;
+	width: 194px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(166,175,175,1);
 }
-#n_2_ed {
-	fill: rgba(166,175,175,1);
-}
-.n_2_ed {
-	position: absolute;
-	overflow: visible;
-	width: 14px;
-	height: 14px;
-	left: 172px;
-	top: 126px;
-}
-#n_15 {
-	fill: rgba(166,175,175,1);
-}
-.n_15 {
-	position: absolute;
-	overflow: visible;
-	width: 14px;
-	height: 14px;
-	left: 200px;
-	top: 126px;
-} */
-
 #Icon_awesome-microphone-alt {
 	fill: rgba(83,255,221,1);
 }

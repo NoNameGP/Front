@@ -9,11 +9,48 @@
 <script id="applicationScript" type="text/javascript" src="audio_information.js"></script>
 </head>
 <body>
+	<div class="parent" onclick="slider_change()">
+		<input type="range" id="range-slider" name="range-slider" min="0" max="10" step="1">
+	</div>
+	
+
+	<script>
+		var load_slider_status = localStorage.getItem("slider_status");
+		var slider_status;
+
+		// input 요소 참조
+		var slider = document.querySelector('#range-slider');
+
+		// 변경할 값 입력하기
+		slider.value = 5;
+		
+		// 현재 값 가져오기
+		slider_status = slider.value;
+		
+		if(load_slider_status){
+			slider.value = parseInt(load_slider_status);			
+			slider_status = slider.value;
+			console.log(slider_status);
+		}
+		
+		localStorage.setItem("slider_status", slider_status);
+		function slider_change(){
+			slider_status = slider.value;
+			console.log("슬라이더" + slider_status);
+			localStorage.setItem("slider_status", slider_status);
+		}
+	</script>
+
+
 <div id="n__1">
 	<svg class="n_179">
 		<rect id="n_179" rx="20" ry="20" x="0" y="0" width="316" height="118">
 		</rect>
-	</svg>
+	
+		</svg>
+	
+	
+	
 	<svg class="n_189">
 		<rect id="n_189" rx="20" ry="20" x="0" y="0" width="316" height="72">
 		</rect>
@@ -117,7 +154,6 @@
 	</label> -->
 
 	
-
 	<div class="toggle-switch" onclick="on_off_change()">
 		<div class="toggle-switch-knob"></div>
 	</div>
@@ -145,8 +181,6 @@
 			document.querySelector(".toggle-switch").style.backgroundColor = "#D9D9D9";
 			switch_status = "off";
 		};
-
-		
 
 		localStorage.setItem("switch_status", switch_status);
 		//localStorage.setItem("switch_left_status", document.querySelector(".toggle-switch-knob").style.left);

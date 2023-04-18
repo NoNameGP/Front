@@ -71,6 +71,11 @@
 	left: 32px;
 	top: 212px;
 	overflow: visible;
+	transition: all 0.30000001192092896s ease-in-out;
+	--web-animation: fadein 0.30000001192092896s ease-in-out;
+	--web-action-type: page;
+	--web-action-target: set/colorChange_dq.html;
+	cursor: pointer;
 }
 #n_15 {
 	fill: rgba(216,255,247,1);
@@ -82,11 +87,7 @@
 	height: 72px;
 	left: 0px;
 	top: 0px;
-	transition: all 0.30000001192092896s ease-in-out;
-	--web-animation: fadein 0.30000001192092896s ease-in-out;
-	--web-action-type: page;
-	--web-action-target: colorChange.html;
-	cursor: pointer;
+	
 }
 #n_ {
 	left: 108px;
@@ -112,7 +113,7 @@
 	transition: all 0.30000001192092896s ease-in-out;
 	--web-animation: fadein 0.30000001192092896s ease-in-out;
 	--web-action-type: page;
-	--web-action-target: audio_information.html;
+	--web-action-target: set/audio_information.html;
 	cursor: pointer;
 }
 #n_18 {

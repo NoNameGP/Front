@@ -1,13 +1,13 @@
 .mediaViewInfo {
-	--web-view-name: 출발지 설정;
-	--web-view-id: n_;
+	--web-view-name: 즐겨찾기 – 추가 - 음성입력2;
+	--web-view-id: n___-_2;
 	--web-scale-to-fit: true;
 	--web-scale-to-fit-type: fit;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 }
 :root {
-	--web-view-ids: n_;
+	--web-view-ids: n___-_2;
 }
 * {
 	margin: 0;
@@ -15,20 +15,19 @@
 	box-sizing: border-box;
 	border: none;
 }
-#n_ {
+#n___-_2 {
 	position: absolute;
 	width: 360px;
 	height: 669px;
 	background-color: rgba(13,13,13,1);
 	overflow: hidden;
-	--web-view-name: 출발지 설정;
-	--web-view-id: n_;
+	--web-view-name: 즐겨찾기 – 추가 - 음성입력2;
+	--web-view-id: n___-_2;
 	--web-scale-to-fit: true;
 	--web-scale-to-fit-type: fit;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 }
-
 @keyframes fadein {
 
 	0% {
@@ -50,117 +49,16 @@
 	left: 0px;
 	top: 0px;
 }
-#n_56 {
-	position: absolute;
-	width: 296px;
-	height: 72px;
-	left: 32px;
-	top: 114px;
-	overflow: visible;
-	--web-animation: fadein undefineds undefined;
-	--web-action-type: page;
-	--web-action-target: start_navi/map_gps.html;
-	cursor: pointer;
+#n_29_el {
+	fill: url(#n_29_el);
 }
-#n_15 {
-	fill: rgba(216,255,247,1);
-}
-.n_15 {
+.n_29_el {
 	position: absolute;
 	overflow: visible;
-	width: 296px;
-	height: 72px;
-	left: 0px;
-	top: 0px;
-}
-#Text {
-	left: 118px;
-	top: 20px;
-	position: absolute;
-	overflow: visible;
-	width: 62px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans KR;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 22px;
-	color: rgba(25,25,25,1);
-}
-#n_55 {
-	position: absolute;
-	width: 296px;
-	height: 72px;
-	left: 32px;
-	top: 206px;
-	overflow: visible;
-	--web-animation: fadein undefineds undefined;
-	--web-action-type: page;
-	--web-action-target: voice.html;
-	cursor: pointer;
-}
-#n_15_dv {
-	fill: rgba(216,255,247,1);
-}
-.n_15_dv {
-	position: absolute;
-	overflow: visible;
-	width: 296px;
-	height: 72px;
-	left: 0px;
-	top: 0px;
-}
-#Text_dw {
-	left: 108px;
-	top: 20px;
-	position: absolute;
-	overflow: visible;
-	width: 82px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans KR;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 22px;
-	color: rgba(25,25,25,1);
-}
-#n_10526 {
-	position: absolute;
-	width: 296px;
-	height: 72px;
-	left: 32px;
-	top: 298px;
-	overflow: visible;
-	transition: all 0.20000000298023224s linear;
-	--web-animation: fadein 0.20000000298023224s linear;
-	--web-action-type: page;
-	--web-action-target: _________4.html;
-	cursor: pointer;
-}
-#n_15_dy {
-	fill: rgba(216,255,247,1);
-}
-.n_15_dy {
-	position: absolute;
-	overflow: visible;
-	width: 296px;
-	height: 72px;
-	left: 0px;
-	top: 0px;
-}
-#Text_dz {
-	left: 108px;
-	top: 20px;
-	position: absolute;
-	overflow: visible;
-	width: 82px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans KR;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 22px;
-	color: rgba(25,25,25,1);
+	width: 150px;
+	height: 150px;
+	left: 105px;
+	top: 392px;
 }
 #Icon_ionic-ios-arrow-back {
 	position: absolute;
@@ -169,16 +67,16 @@
 	left: 10px;
 	top: 41px;
 	overflow: visible;
-	transition: all 0.4000000059604645s ease-in;
-	--web-animation: fadein 0.4000000059604645s ease-in;
+	transition: all 0.20000000298023224s linear;
+	--web-animation: fadein 0.20000000298023224s linear;
 	--web-action-type: page;
-	--web-action-target: home.html;
+	--web-action-target: destination_bookmark_audio_3.html;
 	cursor: pointer;
 }
-#Icon_ionic-ios-arrow-back_d {
+#Icon_ionic-ios-arrow-back_en {
 	fill: rgba(166,175,175,1);
 }
-.Icon_ionic-ios-arrow-back_d {
+.Icon_ionic-ios-arrow-back_en {
 	overflow: visible;
 	position: absolute;
 	width: 13.503px;
@@ -187,21 +85,7 @@
 	top: 0px;
 	transform: matrix(1,0,0,1,0,0);
 }
-#n__d {
-	left: 132px;
-	top: 38px;
-	position: absolute;
-	overflow: visible;
-	width: 98px;
-	height: 29px;
-	text-align: center;
-	font-family: Noto Sans KR;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 20px;
-	color: rgba(243,243,252,1);
-}
-#n__1__9 {
+#n__1__27 {
 	position: absolute;
 	width: 79.271px;
 	height: 14.59px;
@@ -232,7 +116,7 @@
 .n_156 {
 	position: absolute;
 	overflow: visible;
-	width: 34.362px;
+	width: 34.361px;
 	height: 11.796px;
 	left: 0px;
 	top: 2.794px;
@@ -281,7 +165,7 @@
 	position: absolute;
 	width: 7.731px;
 	height: 10.321px;
-	left: 3.582px;
+	left: 3.583px;
 	top: 0.794px;
 	transform: matrix(1,0,0,1,0,0);
 }
@@ -341,7 +225,7 @@
 .n_2150 {
 	overflow: visible;
 	position: absolute;
-	width: 7.887px;
+	width: 7.888px;
 	height: 3.17px;
 	left: 4.144px;
 	top: 6.344px;
@@ -424,7 +308,7 @@
 	width: 2px;
 	height: 5.433px;
 	left: 3px;
-	top: 5.541px;
+	top: 5.54px;
 	transform: matrix(1,0,0,1,0,0);
 }
 #n_11 {
@@ -442,6 +326,205 @@
 	width: 2px;
 	height: 8.399px;
 	left: 6px;
-	top: 2.575px;
+	top: 2.574px;
 	transform: matrix(1,0,0,1,0,0);
+}
+#Text {
+	left: 132px;
+	top: 38px;
+	position: absolute;
+	overflow: visible;
+	width: 98px;
+	height: 29px;
+	text-align: center;
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(243,243,252,1);
+}
+#Icon_awesome-microphone-alt {
+	fill: rgba(83,255,221,1);
+}
+.Icon_awesome-microphone-alt {
+	overflow: visible;
+	position: absolute;
+	width: 77.736px;
+	height: 113.071px;
+	left: 141.13px;
+	top: 410px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#n_607 {
+	position: absolute;
+	width: 115px;
+	height: 46.116px;
+	left: 122.5px;
+	top: 360px;
+	overflow: visible;
+}
+#n_1 {
+	fill: transparent;
+	stroke: rgba(83,255,221,1);
+	stroke-width: 4px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.n_1 {
+	overflow: visible;
+	position: absolute;
+	width: 4px;
+	height: 34px;
+	left: 57.5px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#n_2 {
+	fill: transparent;
+	stroke: rgba(83,255,221,1);
+	stroke-width: 4px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.n_2 {
+	overflow: visible;
+	position: absolute;
+	width: 20.488px;
+	height: 30.488px;
+	left: 74.5px;
+	top: 10px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#n_5 {
+	fill: transparent;
+	stroke: rgba(83,255,221,1);
+	stroke-width: 4px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.n_5 {
+	overflow: visible;
+	position: absolute;
+	width: 35.366px;
+	height: 20.366px;
+	left: 85px;
+	top: 31.116px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#n_6 {
+	fill: transparent;
+	stroke: rgba(83,255,221,1);
+	stroke-width: 4px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.n_6 {
+	overflow: visible;
+	position: absolute;
+	width: 20.488px;
+	height: 30.488px;
+	left: 25.5px;
+	top: 10px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#n_7 {
+	fill: transparent;
+	stroke: rgba(83,255,221,1);
+	stroke-width: 4px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.n_7 {
+	overflow: visible;
+	position: absolute;
+	width: 35.366px;
+	height: 20.366px;
+	left: 0px;
+	top: 31.116px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#n_1_fe {
+	fill: rgba(83,255,221,1);
+}
+.n_1_fe {
+	position: absolute;
+	overflow: visible;
+	width: 14px;
+	height: 14px;
+	left: 144px;
+	top: 126px;
+}
+#n_2_ff {
+	fill: rgba(166,175,175,1);
+}
+.n_2_ff {
+	position: absolute;
+	overflow: visible;
+	width: 14px;
+	height: 14px;
+	left: 172px;
+	top: 126px;
+}
+#n_15 {
+	fill: rgba(166,175,175,1);
+}
+.n_15 {
+	position: absolute;
+	overflow: visible;
+	width: 14px;
+	height: 14px;
+	left: 200px;
+	top: 126px;
+}
+
+
+.pulse{
+    z-index:0;
+    position:absolute;
+	overflow: visible;
+    top:66%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    max-width:100rem
+}
+
+
+.pulse circle{
+    fill:rgba(83,255,221,1);
+    transform:scale(0);
+    opacity:0;
+    transform-origin:50% 50%;
+    animation:pulse 1.5s 10 cubic-bezier(0.5, 0.5, 0, 1)
+}
+
+
+/* .pulse circle:nth-child(2){
+    fill:#7fc6a4;
+    animation:pulse 3s 3s 5 cubic-bezier(0.5, 0.5, 0, 1)
+}
+
+
+.pulse circle:nth-child(3){
+    fill:#e5f77d;
+    animation:pulse 3s 6s 5 cubic-bezier(0.5, 0.5, 0, 1)
+} */
+
+
+@keyframes pulse{
+    25%{
+        opacity:0.3
+    }
+    100%{
+        transform:scale(1)
+    }
 }

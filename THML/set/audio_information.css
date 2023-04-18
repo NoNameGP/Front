@@ -1,13 +1,30 @@
+.parent {
+	position: relative;
+	/* height: 400px; */
+}
+
+#range-slider {
+	position: absolute;
+	top: 170px;
+	left: 50px;
+	z-index: 1;
+}
+#range-slider {
+	margin-top: 20px;
+}
+
+
+
 .mediaViewInfo {
-	--web-view-name: 출발지 설정;
-	--web-view-id: n_;
+	--web-view-name: 환경설정 – 1;
+	--web-view-id: n__1;
 	--web-scale-to-fit: true;
 	--web-scale-to-fit-type: fit;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 }
 :root {
-	--web-view-ids: n_;
+	--web-view-ids: n__1;
 }
 * {
 	margin: 0;
@@ -15,20 +32,19 @@
 	box-sizing: border-box;
 	border: none;
 }
-#n_ {
+#n__1 {
 	position: absolute;
 	width: 360px;
 	height: 669px;
 	background-color: rgba(13,13,13,1);
 	overflow: hidden;
-	--web-view-name: 출발지 설정;
-	--web-view-id: n_;
+	--web-view-name: 환경설정 – 1;
+	--web-view-id: n__1;
 	--web-scale-to-fit: true;
 	--web-scale-to-fit-type: fit;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
 }
-
 @keyframes fadein {
 
 	0% {
@@ -38,6 +54,28 @@
 		opacity: 1;
 	}
 
+}
+#n_179 {
+	fill: rgba(54,54,54,1);
+}
+.n_179 {
+	position: absolute;
+	overflow: visible;
+	width: 316px;
+	height: 118px;
+	left: 22px;
+	top: 114px;
+}
+#n_189 {
+	fill: rgba(54,54,54,1);
+}
+.n_189 {
+	position: absolute;
+	overflow: visible;
+	width: 316px;
+	height: 72px;
+	left: 22px;
+	top: 252px;
 }
 #n_176 {
 	fill: rgba(25,25,25,1);
@@ -50,149 +88,12 @@
 	left: 0px;
 	top: 0px;
 }
-#n_56 {
-	position: absolute;
-	width: 296px;
-	height: 72px;
-	left: 32px;
-	top: 114px;
-	overflow: visible;
-	--web-animation: fadein undefineds undefined;
-	--web-action-type: page;
-	--web-action-target: start_navi/map_gps.html;
-	cursor: pointer;
-}
-#n_15 {
-	fill: rgba(216,255,247,1);
-}
-.n_15 {
-	position: absolute;
-	overflow: visible;
-	width: 296px;
-	height: 72px;
-	left: 0px;
-	top: 0px;
-}
 #Text {
-	left: 118px;
-	top: 20px;
-	position: absolute;
-	overflow: visible;
-	width: 62px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans KR;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 22px;
-	color: rgba(25,25,25,1);
-}
-#n_55 {
-	position: absolute;
-	width: 296px;
-	height: 72px;
-	left: 32px;
-	top: 206px;
-	overflow: visible;
-	--web-animation: fadein undefineds undefined;
-	--web-action-type: page;
-	--web-action-target: voice.html;
-	cursor: pointer;
-}
-#n_15_dv {
-	fill: rgba(216,255,247,1);
-}
-.n_15_dv {
-	position: absolute;
-	overflow: visible;
-	width: 296px;
-	height: 72px;
-	left: 0px;
-	top: 0px;
-}
-#Text_dw {
-	left: 108px;
-	top: 20px;
-	position: absolute;
-	overflow: visible;
-	width: 82px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans KR;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 22px;
-	color: rgba(25,25,25,1);
-}
-#n_10526 {
-	position: absolute;
-	width: 296px;
-	height: 72px;
-	left: 32px;
-	top: 298px;
-	overflow: visible;
-	transition: all 0.20000000298023224s linear;
-	--web-animation: fadein 0.20000000298023224s linear;
-	--web-action-type: page;
-	--web-action-target: _________4.html;
-	cursor: pointer;
-}
-#n_15_dy {
-	fill: rgba(216,255,247,1);
-}
-.n_15_dy {
-	position: absolute;
-	overflow: visible;
-	width: 296px;
-	height: 72px;
-	left: 0px;
-	top: 0px;
-}
-#Text_dz {
-	left: 108px;
-	top: 20px;
-	position: absolute;
-	overflow: visible;
-	width: 82px;
-	white-space: nowrap;
-	text-align: left;
-	font-family: Noto Sans KR;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 22px;
-	color: rgba(25,25,25,1);
-}
-#Icon_ionic-ios-arrow-back {
-	position: absolute;
-	width: 13.503px;
-	height: 23.619px;
-	left: 10px;
-	top: 41px;
-	overflow: visible;
-	transition: all 0.4000000059604645s ease-in;
-	--web-animation: fadein 0.4000000059604645s ease-in;
-	--web-action-type: page;
-	--web-action-target: home.html;
-	cursor: pointer;
-}
-#Icon_ionic-ios-arrow-back_d {
-	fill: rgba(166,175,175,1);
-}
-.Icon_ionic-ios-arrow-back_d {
-	overflow: visible;
-	position: absolute;
-	width: 13.503px;
-	height: 23.619px;
-	left: 0px;
-	top: 0px;
-	transform: matrix(1,0,0,1,0,0);
-}
-#n__d {
-	left: 132px;
+	left: 125px;
 	top: 38px;
 	position: absolute;
 	overflow: visible;
-	width: 98px;
+	width: 112px;
 	height: 29px;
 	text-align: center;
 	font-family: Noto Sans KR;
@@ -201,7 +102,76 @@
 	font-size: 20px;
 	color: rgba(243,243,252,1);
 }
-#n__1__9 {
+#n_71 {
+	position: absolute;
+	width: 116px;
+	height: 29px;
+	left: 42px;
+	top: 135px;
+	overflow: visible;
+}
+#n_ {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 117px;
+	height: 29px;
+	text-align: left;
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(243,243,252,1);
+}
+#n_74 {
+	position: absolute;
+	width: 115px;
+	height: 29px;
+	left: 42px;
+	top: 274px;
+	overflow: visible;
+}
+#n__dx {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 116px;
+	height: 29px;
+	text-align: left;
+	font-family: Noto Sans KR;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(243,243,252,1);
+}
+#Icon_ionic-ios-arrow-back {
+	position: absolute;
+	width: 13.503px;
+	height: 23.619px;
+	left: 10px;
+	top: 41px;
+	overflow: visible;
+	transition: all 0.20000000298023224s linear;
+	--web-animation: fadein 0.20000000298023224s linear;
+	--web-action-type: page;
+	--web-action-target: ../setting.html;
+	cursor: pointer;
+}
+#Icon_ionic-ios-arrow-back_dz {
+	fill: rgba(166,175,175,1);
+}
+.Icon_ionic-ios-arrow-back_dz {
+	overflow: visible;
+	position: absolute;
+	width: 13.503px;
+	height: 23.619px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#n__1__20 {
 	position: absolute;
 	width: 79.271px;
 	height: 14.59px;
@@ -232,7 +202,7 @@
 .n_156 {
 	position: absolute;
 	overflow: visible;
-	width: 34.362px;
+	width: 34.361px;
 	height: 11.796px;
 	left: 0px;
 	top: 2.794px;
@@ -281,7 +251,7 @@
 	position: absolute;
 	width: 7.731px;
 	height: 10.321px;
-	left: 3.582px;
+	left: 3.583px;
 	top: 0.794px;
 	transform: matrix(1,0,0,1,0,0);
 }
@@ -341,7 +311,7 @@
 .n_2150 {
 	overflow: visible;
 	position: absolute;
-	width: 7.887px;
+	width: 7.888px;
 	height: 3.17px;
 	left: 4.144px;
 	top: 6.344px;
@@ -445,3 +415,188 @@
 	top: 2.575px;
 	transform: matrix(1,0,0,1,0,0);
 }
+#n_10537 {
+	position: absolute;
+	width: 74px;
+	height: 40px;
+	left: 246px;
+	top: 268px;
+	overflow: visible;
+	transition: all 0.20000000298023224s linear;
+	--web-animation: fadein 0.20000000298023224s linear;
+	--web-action-type: page;
+	--web-action-target: _______4.html;
+	cursor: pointer;
+}
+/* #n_188 {
+	fill: rgba(116,251,207,1);
+}
+.n_188 {
+	position: absolute;
+	overflow: visible;
+	width: 74px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+}
+#n_30 {
+	fill: rgba(255,255,255,1);
+}
+.n_30 {
+	filter: drop-shadow(-1px 1px 6px rgba(0, 23, 19, 0.827));
+	position: absolute;
+	overflow: visible;
+	width: 54px;
+	height: 54px;
+	left: 36px;
+	top: 2px;
+} */
+
+/* 스위치 바깥 사이즈 조절 */
+/* .switch-button {
+    position: relative;
+    display: inline-block;
+    width: 74px;
+    height: 40px;
+   
+
+}
+
+.switch-button input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/*스위치 on 상태
+.onoff-switch {
+    position: absolute;
+    cursor: pointer;
+    left: 250px;
+	top: 270px;
+
+    border-radius:20px;
+    background-color: #74FBCF;
+    -webkit-transition: .4s;
+    transition: .4s;
+    width: 74px;
+    height: 40px;
+} */
+
+/*스위치 off 상태의 동그라미*/
+/* .off-switch {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 38px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ffffff;
+    -webkit-transition: .5s;
+    transition: .4s;
+    border-radius:20px;
+} */
+
+/*스위치 on 상태의 동그라미 */
+/* .onoff-switch:before {
+    position: absolute;
+    content: "";
+    height: 32px;
+    width: 38px;
+    left: 32px;
+    bottom: 4px;
+    background-color: #ffffff;
+    -webkit-transition: .5s;
+    transition: .4s;
+    border-radius:20px;
+} */
+
+
+/*버튼 클릭 후 */
+/* .switch-button input:checked + .onoff-switch {
+    background-color: #D9D9D9;
+} */
+
+/* .switch-button input:checked + .onoff-switch:before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(100px);
+    /*버튼 움직이는 길이
+    transform: translateX(-28px);
+} */
+
+
+/* 토글 스위치 스타일 */
+.toggle-switch {
+	display: inline-block;
+	position: relative;
+	left: 250px;
+	top: 270px;
+	width: 74px;
+	height: 40px;
+	border-radius: 30px;
+	background-color: #D9D9D9;
+	cursor: pointer;
+}
+
+.toggle-switch-knob {
+	position: absolute;
+	bottom: 4px;
+	left: 4px;
+	width: 38px;
+	height: 32px;
+	border-radius: 50%;
+	background-color: #fff;
+	transition: left 0.2s;
+}
+
+/* .toggle-switch.on {
+	background-color: #74FBCF;
+}
+
+.toggle-switch.on .toggle-switch-knob {
+	left: calc(100% - 26px - 2px);
+} */
+
+
+
+/* #n_211 {
+	fill: rgba(166,175,175,1);
+}
+.n_211 {
+	position: absolute;
+	overflow: visible;
+	width: 280px;
+	height: 8px;
+	left: 40px;
+	top: 194px;
+}
+#n_212 {
+	fill: rgba(116,251,207,1);
+}
+.n_212 {
+	position: absolute;
+	overflow: visible;
+	width: 34px;
+	height: 8px;
+	left: 40px;
+	top: 194px;
+}
+#n_40 {
+	fill: rgba(255,255,255,1);
+}
+.n_40 {
+	filter: drop-shadow(-1px 1px 6px rgba(0, 23, 19, 0.827));
+	position: absolute;
+	overflow: visible;
+	width: 52px;
+	height: 52px;
+	left: 40px;
+	top: 181px;
+}  */
+
+
+/* #range-slider {
+	width: 300px;
+} */
+
