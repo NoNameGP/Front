@@ -142,6 +142,7 @@
 </div>
 
 <script>
+	var speech_word;
 	// Google Chrome and Microsoft Edge need vendor prefix 'webkit'
 	window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -174,6 +175,7 @@
 		.join('');
 
 		p.textContent = transcript;
+		speech_word = p.textContent;
 
 		console.log(p.textContent);
 	})
@@ -189,11 +191,12 @@
 
 <script>
 	function locateKap(){
+		localStorage.setItem("destionation_speech_word", speech_word);
 		console.log("페이지 이동완료");
-		location.replace("ten_1.html");
+		location.replace("destionation_audio_list.html");
 	};
 
-	cnt = 20; //10초 카운트
+	cnt = 5; //10초 카운트
 	function countdown(){
 		if(cnt == 0){
 			locateKap();

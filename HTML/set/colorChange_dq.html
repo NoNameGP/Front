@@ -247,11 +247,14 @@
 	if(load_background_status==="white"){
 		document.getElementById("n__").style.backgroundColor = "white";
 		document.getElementById("n_176").style.fill = "white";
-		document.getElementById("n_").style.color = "black";
+		document.getElementById("n_").style.color = "#191919";
 		document.getElementById("n_32_e").style.fill = "rgba(116,251,207,1)";
-		document.getElementById("n_32").style.fill = "white";
-		document.getElementById("n_208").style.stroke = "white";
+		document.getElementById("n_32").style.fill = "#D0D0D0";
+		document.getElementById("n_208").style.stroke = "#191919";
 		document.getElementById("n_184").style.stroke = "rgba(116,251,207,1)";
+		document.getElementById("n_7625_e").style.stroke = "#191919"
+		document.getElementById("n_7625").style.stroke = "#656565"
+		document.getElementById("Icon_ionic-ios-arrow-back_d").style.fill = "#363636"
 	}
 
 	if(load_background_status==="Black"){
@@ -262,18 +265,29 @@
 		document.getElementById("n_32_e").style.fill = " rgba(208,208,208,1)";
 		document.getElementById("n_208").style.stroke = "rgba(116,251,207,1)";
 		document.getElementById("n_184").style.stroke = "white";
+		document.getElementById("n_7625_e").style.stroke = "#656565"
+		document.getElementById("n_7625").style.stroke = "#191919"
 	}
 
 
 	function changeBackground() {
 		document.getElementById("n__").style.backgroundColor = "white";
 		document.getElementById("n_176").style.fill = "white";
-		document.getElementById("n_").style.color = "black";
+		document.getElementById("n_").style.color = "#191919";
 		document.getElementById("n_32_e").style.fill = "rgba(116,251,207,1)";
-		document.getElementById("n_32").style.fill = "white";
-		document.getElementById("n_208").style.stroke = "white";
+		document.getElementById("n_32").style.fill = "#D0D0D0";
+		document.getElementById("n_208").style.stroke = "#191919";
 		document.getElementById("n_184").style.stroke = "rgba(116,251,207,1)";
 		localStorage.setItem("background_status", "white");
+		document.getElementById("n_7625_e").style.stroke = "#191919"
+		document.getElementById("n_7625").style.stroke = "#656565"
+		document.getElementById("Icon_ionic-ios-arrow-back_d").style.fill = "#363636"
+		
+		document.getElementById("n_209").style.fill = "#F3F3FC"
+		document.getElementById("Text_ep").style.color = "#191919";
+		// document.getElementById("n_32").style.fill = "#FFFFFF";
+		document.getElementById("Text").style.color = "#191919";
+		document.getElementById("n_180").style.fill = "#F3F3FC"
 
 	}
 	function changeBackgroundBlack(){
@@ -285,6 +299,14 @@
 		document.getElementById("n_208").style.stroke = "rgba(116,251,207,1)";
 		document.getElementById("n_184").style.stroke = "white";
 		localStorage.setItem("background_status", "Black");
+		document.getElementById("n_7625_e").style.stroke = "#656565"
+		document.getElementById("n_7625").style.stroke = "#191919"
+
+		document.getElementById("Text_ep").style.color = "#F3F3FC";
+		document.getElementById("n_209").style.fill = "#363636"
+		document.getElementById("Text").style.color = "#F3F3FC";
+		document.getElementById("n_180").style.fill = "#363636"
+		
 	}
 </script>
 

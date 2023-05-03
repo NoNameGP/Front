@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>즐겨찾기 – 추가 - 음성입력2</title>
-<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="destination_bookmark_audio_4.css"/>
-<script id="applicationScript" type="text/javascript" src="destination_bookmark_audio_4.js"></script>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="destination_bookmark_audio_speech.css"/>
+<script id="applicationScript" type="text/javascript" src="destination_bookmark_audio_speech.js"></script>
 </head>
 <body>
 <div id="n___-_2">
@@ -142,6 +142,7 @@
 </div>
 
 <script>
+	var speech_word;
 	// Google Chrome and Microsoft Edge need vendor prefix 'webkit'
 	window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -174,6 +175,7 @@
 		.join('');
 
 		p.textContent = transcript;
+		speech_word = p.textContent;
 
 		console.log(p.textContent);
 	})
@@ -189,8 +191,9 @@
 
 <script>
 	function locateKap(){
+		localStorage.setItem("destionation_bookmark_speech_word", speech_word);
 		console.log("페이지 이동완료");
-		location.replace("ten_12.html");
+		location.replace("destionation_bookmark_audio_speech_list.html");
 	}
 
 	cnt = 20; //10초 카운트

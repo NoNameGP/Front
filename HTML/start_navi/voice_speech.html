@@ -141,6 +141,7 @@
 </div>
 
 <script>
+	var speech_word;
 	// Google Chrome and Microsoft Edge need vendor prefix 'webkit'
 	window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -173,6 +174,7 @@
 		.join('');
 
 		p.textContent = transcript;
+		speech_word = p.textContent;
 
 	  // create new paragraph when speech breaks
 	  // 잠시 멈췄다 말할 때 덮어씌워지는 문제 해결하기 위해 새로운 내용을 넣을 새 문단 요소 만들기
@@ -215,11 +217,12 @@
 
 <script>
 	function locateKap(){
+		localStorage.setItem("start_speech_word", speech_word);
 		console.log("페이지 이동완료");
-		location.replace("ten.html");
+		location.replace("voice_speech_list.html");
 	}
 
-	cnt = 20; //10초 카운트
+	cnt = 5; //10초 카운트
 	function countdown(){
 		if(cnt == 0){
 			locateKap();
